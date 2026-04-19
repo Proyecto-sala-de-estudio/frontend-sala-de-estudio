@@ -71,9 +71,9 @@ Ver: [Arquitectura.md](./Arquitectura.md)
 
 | Integrante | Rol | Ítems de la rúbrica a cargo |
 |------------|-----|-----------------------------|
-| José Ignacio Leiva | Analista de requisitos | Completitud, correctitud y calidad de historias de usuario (issues) |
-| Vicente Araya | Arquitecto de software | Estilo arquitectónico, descomposición modular, consistencia del diagrama y decisiones de diseño |
-| Matías Henríquez | Encargado de requisitos extrafuncionales | Catálogo de REF, clasificación, priorización y relación con la arquitectura |
-| Martín Leon | Encargado de dominio e interfaz | Entidades del dominio, mockups y coherencia con historias de usuario |
+| José Ignacio Leiva | Programador | algo |
+| Vicente Araya | Diseñador | algo |
+| Matías Henríquez | Representante cliente | algo |
+| Martín Leon | Arquitectura | algo |
 
 
