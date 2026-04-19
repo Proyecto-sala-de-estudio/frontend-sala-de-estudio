@@ -18,7 +18,7 @@ Se adopta una arquitectura cliente-servidor en capas porque permite separar clar
 
 ## 2. Diagrama de Arquitectura
 
-![Diagrama de Arquitectura](./imagen/diagrama_arquitectura.jpg)
+![Diagrama de Arquitectura](https://github.com/Proyecto-sala-de-estudio/sala-de-estudio/blob/main/imagen/diagrama_arquitectura.jpg)
 
 ## 3. Descomposición Modular
 
