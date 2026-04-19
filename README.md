@@ -57,9 +57,9 @@ Ver: [ReqExtrafuncionales.md](./ReqExtrafuncionales.md)
 
 ## Mockups
 
-| Mockup | Historia de usuario relacionada |(Preguntar profe)
+| Mockup | Historia de usuario relacionada (Preguntar profe)|
 |--------|----------------------------------|
-| Lista de salas disponibles(pegar link  figma ) | US-01 |
+| (pegar link  figma ) | US-01 |
 
 
 
