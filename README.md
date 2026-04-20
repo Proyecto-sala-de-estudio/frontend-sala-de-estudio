@@ -6,43 +6,37 @@ Sala de Estudio es una aplicación web orientada a estudiantes universitarios pa
 ## Historias de Usuario
 Todas las historias están registradas como GitHub Issues.
 
-| ID    | Nombre                           | Issue |
-|-------|----------------------------------|-------|
-| US-01 | Ver ubicación de salas           | 1)    |
-| US-02 | Ver capacidad de salas           | 2)    |
-| US-03 | Reservar sala rápidamente        | 3)    |
-| US-04 | Cancelar reserva                 | 4)    |
-| US-05 | Prioridad por facultad           | 5)    |
-| US-06 | Ver equipamiento de salas        | 6)    |
-| US-07 | Filtrar salas por características| 7)    |
-| US-08 | Gestionar salas                  | 8)    |
-| US-09 | Ver uso de salas                 | 9)    |
-| US-10 | Configurar reglas del sistema    | 10)   |
+| ID | Nombre | Issue |
+| :--- | :--- | :--- |
+| US-01 | Ver ubicación de salas | [#3](https://github.com/Proyecto-sala-de-estudio/sala-de-estudio/issues/3) |
+| US-02 | Ver capacidad de salas | [#4](https://github.com/Proyecto-sala-de-estudio/sala-de-estudio/issues/4) |
+| US-03 | Reservar sala rápidamente | [#5](https://github.com/Proyecto-sala-de-estudio/sala-de-estudio/issues/5) |
+| US-04 | Cancelar reserva | [#6](https://github.com/Proyecto-sala-de-estudio/sala-de-estudio/issues/6) |
+| US-05 | Prioridad por facultad | [#7](https://github.com/Proyecto-sala-de-estudio/sala-de-estudio/issues/7) |
+| US-06 | Ver equipamiento de salas | [#8](https://github.com/Proyecto-sala-de-estudio/sala-de-estudio/issues/8) |
+| US-07 | Filtrar salas por características | [#14](https://github.com/Proyecto-sala-de-estudio/sala-de-estudio/issues/14) |
+| US-08 | Gestionar salas | [#11](https://github.com/Proyecto-sala-de-estudio/sala-de-estudio/issues/11) |
+| US-09 | Ver uso de salas | [#12](https://github.com/Proyecto-sala-de-estudio/sala-de-estudio/issues/12) |
+| US-10 | Configurar reglas del sistema | [#13](https://github.com/Proyecto-sala-de-estudio/sala-de-estudio/issues/13) |
 
 ## Requisitos Extrafuncionales
 Ver: [ReqExtrafuncionales.md](./ReqExtrafuncionales.md)
 
 ## Entidades del Dominio
-
 ![Diagrama de clases](./imagen/diagrama_clases.png)
 
 ## Mockups
-
-| Mockup | Historia de usuario relacionada (Preguntar profe)|
-|--------|----------------------------------|
-| (pegar link  figma ) | US-01 |
-
+| Mockup | Historia de usuario relacionada |
+| :--- | :--- |
+| [Prototipo en Figma](https://www.figma.com/design/4vkMNlZ1Hg1iXFpn5t1Kz1/proyecto-sala-de-estudio?node-id=0-1&t=aOCrCvCORP4L3zaH-1) | US-01 a US-10 |
 
 ## Diseño Arquitectónico
 Ver: [Arquitectura.md](./Arquitectura.md)
 
-## Responsabilidades del equipo
-
-| Integrante | Rol | Ítems de la rúbrica a cargo |
-|------------|-----|-----------------------------|
-| José Ignacio Leiva | Programador | algo |
-| Vicente Araya | Diseñador | algo |
-| Matías Henríquez | Representante cliente | algo |
-| Martín Leon | Arquitectura | algo |
-
-
+## Responsabilidades del Equipo
+| Integrante | Rol | Items de la rúbrica a cargo |
+| :--- | :--- | :--- |
+| José Ignacio Leiva | Programador | Historias de Usuario (Issues) |
+| Vicente Araya | Diseñador | Mockups, Entidades del dominio |
+| Matías Henríquez | Representante cliente | Requisitos Extrafuncionales |
+| Martín Leon | Arquitectura | Diseño Arquitectónico, Diagrama de Arquitectura, Descomposición Modular |
