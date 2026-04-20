@@ -1,7 +1,6 @@
 ## 1. Estilo Arquitectónico
 
-Estilo adoptado: Cliente-Servidor en capas
-
+Estilo adoptado: Rest
 Justificación basada en REF priorizados:
 
 | REF ID | Descripción                                                                | Prioridad | Cómo lo aborda el estilo |
