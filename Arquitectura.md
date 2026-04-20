@@ -18,7 +18,7 @@ Se adopta un estilo arquitectónico REST basado en la gestión de recursos a tra
 
 ## 2. Diagrama de Arquitectura
 
-![Diagrama de Arquitectura](https://github.com/Proyecto-sala-de-estudio/sala-de-estudio/blob/main/imagen/diagrama_arquitectura.jpg)
+![Diagrama de Arquitectura](https://github.com/Proyecto-sala-de-estudio/sala-de-estudio/blob/main/imagen/diagrama_arquitectura.png)
 
 ## 3. Descomposición Modular
 
