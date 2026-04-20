@@ -1,6 +1,7 @@
 ## 1. Estilo Arquitectónico
 
 Estilo adoptado: Rest
+
 Justificación basada en REF priorizados:
 
 | REF ID | Descripción                                                                | Prioridad | Cómo lo aborda el estilo |
