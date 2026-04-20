@@ -22,23 +22,7 @@ Ver: [ReqExtrafuncionales.md](./ReqExtrafuncionales.md)
 
 ## Entidades del Dominio
 
-Usuario:
-- id
-- nombre
-- facultad
-
-Sala:
-- id
-- ubicación
-- capacidad
-- equipamiento
-
-Reserva:
-- id
-- fecha
-- usuario
-- sala
-- estado
+![Diagrama de clases](./imagen/diagrama_clases.png)
 
 ## Mockups
 
