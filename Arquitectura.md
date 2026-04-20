@@ -13,75 +13,47 @@ Justificación basada en REF priorizados:
 | REF-07 | El sistema debe ser modular y de bajo acoplamiento | Alta | El diseño orientado a recursos (salas, usuarios, reservas) permite estructurar la API en endpoints independientes, reduciendo dependencias directas. |
 | REF-10 | Los datos de reservas deben mantenerse consistentes en todo momento | Alta | Las operaciones se realizan a través de verbos HTTP específicos (POST, PUT, DELETE) sobre recursos únicos, siendo la API la única puerta de entrada que valida y garantiza la consistencia antes de persistir. |
 
+
 Explicación textual:  
-Se adopta un estilo arquitectónico REST basado en la gestión de recursos a través de servicios web. Esta elección proporciona un alto grado de desacoplamiento entre la interfaz de usuario y la lógica subyacente, ya que interactúan exclusivamente mediante endpoints estandarizados y verbos HTTP. Esta arquitectura es ideal para el sistema de reserva de salas porque su naturaleza *stateless* (sin estado de sesión en el servidor) favorece la escalabilidad y el rendimiento. Tratar las entidades del dominio (salas, reservas, usuarios) como recursos independientes mejora significativamente la modularidad, facilita la seguridad mediante la validación de peticiones individuales y permite integrar futuras funcionalidades de administración sin alterar la estructura base de los servicios expuestos a los estudiantes.
+Se adopta un estilo REST que desacopla la presentación de la lógica de negocio. El sistema se organiza en torno a recursos (Salas, Reservas) accesibles mediante una interfaz uniforme. Esta elección garantiza que tanto la aplicación para estudiantes como el panel de administración consuman la misma lógica de negocio, asegurando integridad y permitiendo que cada parte del sistema evolucione de forma independiente.
 
 ## 2. Diagrama de Arquitectura
 
-![Diagrama de Arquitectura](https://github.com/Proyecto-sala-de-estudio/sala-de-estudio/blob/main/imagen/diagrama_arquitectura.png)
+![Diagrama de Arquitectura](./imagen/diagrama_arquitectura.png)
 
 ## 3. Descomposición Modular
 
 Fundamentación:  
-La descomposición modular se realiza por funcionalidad del dominio, separando responsabilidades asociadas a estudiantes, reservas, salas y administración, con el objetivo de mantener alta cohesión y un bajo acoplamiento al exponer o consumir recursos.
+La descomposición se basa en una arquitectura de sistemas distribuidos, separando las interfaces de cliente según el rol del usuario y centralizando la lógica y persistencia en un Backend robusto.
 
-### Módulo 1: Interfaz de Usuario
-- Responsabilidad: Mostrar la información al usuario y permitir la interacción fluida con el sistema.
-- Ofrece a otros módulos: Solicitudes de consulta, reserva, cancelación, edición y administración.
-- Depende de: Backend API (consumo de recursos REST).
+### Módulo 1: Frontend Web/Mobile (Interfaz de Usuario)
+- **Responsabilidad:** Proveer la interfaz principal para que los estudiantes visualicen, filtren y reserven salas de estudio.
+- **Ofrece a otros módulos:** Captura de datos de usuario y solicitudes de reserva.
+- **Depende de:** API REST (Módulo 3).
 
-### Módulo 2: Gestión de Usuarios
-- Responsabilidad: Administrar usuarios, su facultad y su rol dentro del sistema.
-- Ofrece a otros módulos: Información de usuario y validación contextual.
-- Depende de: Base de Datos.
+### Módulo 2: Panel de Control / CMS (Admin Salas)
+- **Responsabilidad:** Interfaz dedicada a administradores para la gestión de inventario de salas, configuración de reglas y visualización de métricas.
+- **Ofrece a otros módulos:** Comandos de configuración y administración del sistema.
+- **Depende de:** API REST (Módulo 3).
 
-### Módulo 3: Gestión de Salas
-- Responsabilidad: Administrar información de salas, ubicación, capacidad, equipamiento y disponibilidad.
-- Ofrece a otros módulos: Datos de salas y consulta de disponibilidad.
-- Depende de: Base de Datos.
+### Módulo 3: API REST (Lógica de la App)
+- **Responsabilidad:** Orquestar la lógica de negocio, validar autenticación, verificar disponibilidad de salas y procesar transacciones.
+- **Ofrece a otros módulos:** Endpoints REST (servicios) para los clientes.
+- **Depende de:** Base de Datos (Módulo 4).
 
-### Módulo 4: Gestión de Reservas
-- Responsabilidad: Crear, cancelar, consultar y modificar reservas asociadas a los recursos.
-- Ofrece a otros módulos: Estado actual e histórico de reservas.
-- Depende de: Gestión de Usuarios, Gestión de Salas, Base de Datos.
-
-### Módulo 5: Administración
-- Responsabilidad: Gestionar salas, visualizar estadísticas de uso y configurar reglas del sistema.
-- Ofrece a otros módulos: Control administrativo, reportes y configuración.
-- Depende de: Gestión de Salas, Gestión de Reservas, Base de Datos.
-
-### Módulo 6: Backend API
-- Responsabilidad: Exponer los recursos del sistema mediante servicios REST al frontend y coordinar la lógica de negocio.
-- Ofrece a otros módulos: Endpoints estandarizados para operaciones sobre usuarios, salas, reservas y administración.
-- Depende de: Gestión de Usuarios, Gestión de Salas, Gestión de Reservas, Administración.
-
-### Módulo 7: Base de Datos
-- Responsabilidad: Persistir los recursos (usuarios, salas, reservas) y reglas del sistema.
-- Ofrece a otros módulos: Almacenamiento y recuperación de información.
-- Depende de: Ninguno.
+### Módulo 4: Base de Datos (Horas Agendadas)
+- **Responsabilidad:** Almacenamiento persistente de toda la información del dominio (usuarios, salas, reservas y reglas).
+- **Ofrece a otros módulos:** Operaciones de lectura y escritura de datos (CRUD).
+- **Depende de:** Ninguno.
 
 ## 4. Decisiones de Diseño
 
 ### Decisión 1
-- Decisión: Utilizar una API REST como mecanismo único de comunicación entre frontend y backend.
-- Motivación: Favorece la separación de responsabilidades, mantenibilidad y escalabilidad (REF-01, REF-07, REF-09).
-- Alternativas consideradas: Comunicación directa del frontend con la base de datos o renderizado desde el servidor.
-- Impacto: Mejora seguridad, control de acceso y permite la reutilización de servicios en futuras plataformas (ej. aplicación móvil).
+- **Decisión:** Implementar dos clientes independientes (Frontend y Panel de Control).
+- **Motivación:** Separa las preocupaciones de seguridad y usabilidad entre estudiantes y administradores (REF-04, REF-07).
+- **Impacto:** Mayor seguridad al aislar funciones administrativas.
 
 ### Decisión 2
-- Decisión: Centralizar la validación de reservas exclusivamente en el backend (API).
-- Motivación: Garantizar integridad y consistencia en la disponibilidad de salas, sin confiar ciegamente en el cliente (REF-10).
-- Alternativas consideradas: Validar únicamente desde el frontend.
-- Impacto: Disminuye errores, evita colisiones (reservas simultáneas) y mejora la confiabilidad general del sistema.
-
-### Decisión 3
-- Decisión: Separar la administración en un módulo independiente.
-- Motivación: Las funcionalidades administrativas tienen responsabilidades distintas a las de los estudiantes y requieren operaciones de control específicas sobre los recursos (REF-07).
-- Alternativas consideradas: Integrar funciones de administración dentro de los módulos de estudiantes.
-- Impacto: Mejora la claridad del diseño, protege endpoints críticos y facilita la evolución paralela del sistema.
-
-### Decisión 4
-- Decisión: Implementar autenticación obligatoria y sin estado (ej. JWT) para acciones sensibles.
-- Motivación: Resguardar reservas, reglas del sistema y acciones administrativas asegurando cada petición individualmente (REF-03).
-- Alternativas consideradas: Permitir acciones sin autenticación o usar sesiones tradicionales almacenadas en memoria.
-- Impacto: Aumenta la seguridad del sistema y mantiene la compatibilidad con los principios del estilo arquitectónico REST.
+- **Decisión:** Uso de API REST como único punto de acceso a datos.
+- **Motivación:** Asegura que todas las reglas de negocio se apliquen de forma consistente (REF-10).
+- **Impacto:** Facilita el mantenimiento y futuras integraciones.
