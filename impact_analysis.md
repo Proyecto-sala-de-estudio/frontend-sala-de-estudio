@@ -1,5 +1,5 @@
 ## 1. Cambio solicitado
-[Describir el cambio de requerimiento asignado por el profesor]
+Se requiere agregar un módulo de vigilancia en tiempo real mediante cámaras IP con procesamiento de imagen para detectar ocupación real versus reserva registrada, operando de forma continua.
 
 ## 2. Nuevas historias de usuario
 ### US-XX: [nombre]
