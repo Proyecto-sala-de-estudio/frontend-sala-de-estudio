@@ -61,7 +61,7 @@ Los atributos que llevará esta entidad Cámara serán:
 
 Además, se agregará un atributo a Sala, esto se debe a que la entidad Cámara esta relacionada con la entidad Sala.
 
-El atributo que se agregará a Sala será el ID de Cámara, para poder identificar que cámara está en cada sala.
+El atributo que se agregará a Sala será el ID_Cámara, para poder identificar que cámara está en cada sala.
 
 Las relaciones que serán afectadas corresponden a la relación del Admin con Salas, que ahora estará vinculada a:
 Admin-Cárama-Salas
