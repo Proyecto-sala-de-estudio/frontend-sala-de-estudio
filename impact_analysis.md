@@ -49,8 +49,9 @@ Trazar cambios de prioridad que motiven cambios en decisiones de arquitectura.
 | REF-09 | El sistema debe soportar múltiples usuarios concurrentes                    | Media     | - | Sin cambio |
 | REF-10 | Los datos de reservas deben mantenerse consistentes en todo momento         | Alta      | - | Sin cambio |
 | REF-11 | Solo los administradores puden tener acceso a las cámaras |-|Alta|Nuevo Requisito|
-| REF-03 |  | Media | Alta | El cambio lo hace crítico |
-| REF-07 | [nuevo REF derivado del cambio] | - | Alta | Nuevo requisito 
+| REF-12 | Mantener todos los modulos bajo 200 ms | - | Alta | Nuevo Requisito
+|
+
 
 ## 4. Impacto en entidades del dominio
 Las nuevas entidades que aparecerán serán la entidad CAMARA
