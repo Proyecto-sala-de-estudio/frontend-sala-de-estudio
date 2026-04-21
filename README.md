@@ -94,7 +94,7 @@ Ver: [Arquitectura.md](./Arquitectura.md)
 ## Responsabilidades del Equipo
 | Integrante | Rol | Items de la rúbrica a cargo |
 | :--- | :--- | :--- |
-| José Ignacio Leiva | Programador | Historias de Usuario (Issues) |
-| Vicente Araya | Diseñador | Mockups, Entidades del dominio |
-| Matías Henríquez | Representante cliente | Requisitos Extrafuncionales |
-| Martín Leon | Arquitectura | Diseño Arquitectónico, Diagrama de Arquitectura, Descomposición Modular |
+| José Ignacio Leiva | Developer | [2.1 - 2.2] |
+| Vicente Araya | Scrum Master | [1.1 - 2.3] |
+| Matías Henríquez | Product Owner | [1.2 - apoyo general en coherencia]  |
+| Martín Leon | Developer | [2.4] |
