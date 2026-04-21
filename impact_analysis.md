@@ -100,10 +100,13 @@ Fundamentación de cambios modulares:
 
 ## 8. Nuevas decisiones de diseño
 ### Decisión 1
-Decisión: [qué se decide]
-Motivación: [por qué, referenciando REF repriorizado si aplica]
-Alternativas consideradas: [opciones evaluadas]
-Impacto: [en qué módulos o REF afecta]
+Decisión: Implementar nuevas funciones al panel de administrador.
+
+Motivación: Debido a que las salas tienen cámaras, los administradores deben tener acceso a estas, y poder tomar decisiones en base a lo que vigilan. 
+
+Alternativas consideradas: no se consideraron más alternativas, se vio esto como la acción  más óptima.
+
+Impacto: Se modificaron tres módulos y se añade uno nuevo. 
 
 ## 9. Trazabilidad actualizada
 | Historia | REF relacionado | Módulo | Mockup |
