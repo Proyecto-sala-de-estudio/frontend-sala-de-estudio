@@ -56,7 +56,9 @@ Trazar cambios de prioridad que motiven cambios en decisiones de arquitectura.
 Las nuevas entidades que aparecerán serán la entidad CAMARA
 
 Los atributos que llevará esta entidad Cámara serán:
+
 -Int Id
+
 -String Estado
 
 Además, se agregará un atributo a Sala, esto se debe a que la entidad Cámara esta relacionada con la entidad Sala.
