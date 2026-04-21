@@ -27,6 +27,16 @@ Trazar cambios de prioridad que motiven cambios en decisiones de arquitectura.
 
 | REF ID | Descripción | Prioridad anterior | Prioridad nueva | Cambio / Motivo |
 |---|---|---|---|---|
+| REF-01 | El sistema debe responder en menos de 2 segundos en operaciones comunes     | Alta      | - | Sin cambio |
+| REF-02 | El sistema debe estar disponible al menos un 99% en horario operativo       | Alta      | - | Sin cambio |
+| REF-03 | Solo usuarios autenticados pueden reservar, cancelar o modificar reservas   | Alta      | - | Sin cambio |
+| REF-04 | La interfaz debe ser simple e intuitiva para estudiantes y administradores  | Alta      | - | Sin cambio |
+| REF-05 | El sistema debe implementarse como aplicación web cliente-servidor          | Media     | - | Sin cambio |
+| REF-06 | Debe funcionar en diferentes navegadores                                    | Media     | - | Sin cambio |
+| REF-07 | El sistema debe ser modular y de bajo acoplamiento                          | Alta      | - | Sin cambio |
+| REF-08 | La interfaz debe estar disponible en idioma español                         | Baja      | - | Sin cambio |
+| REF-09 | El sistema debe soportar múltiples usuarios concurrentes                    | Media     | - | Sin cambio |
+| REF-10 | Los datos de reservas deben mantenerse consistentes en todo momento         | Alta      | - | Sin cambio |
 | REF-01 | [descripción] | Alta | Alta | Sin cambio |
 | REF-03 | [descripción] | Media | Alta | El cambio lo hace crítico |
 | REF-07 | [nuevo REF derivado del cambio] | - | Alta | Nuevo requisito |
