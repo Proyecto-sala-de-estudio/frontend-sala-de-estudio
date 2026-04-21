@@ -110,9 +110,9 @@ Impacto: Se modificó un módulo y se añade uno nuevo.
 ## 9. Trazabilidad actualizada
 | Historia | REF relacionado | Módulo | Mockup |
 |---|---|---|---|
-| US-11 | REF-11 | Módulo 2 y 3 | 1. Panel Admin |
-| US-12 | REF-11 | Módulo 2 y 3 | 1. Panel Admin |
-| US-13 | REF-11 | Módulo 2 y 3 | 2. Detalle de Reserva |
+| US-11 | REF-11 | Módulo 2, 3, 4 y 5 | 1. Panel Admin |
+| US-12 | REF-11 | Módulo 2, 3, 4 y 5 | 1. Panel Admin |
+| US-13 | REF-11 | Módulo 2, 3, 4 y 5 | 2. Detalle de Reserva |
 
 ## 10. Justificación global y trade-offs
 El sistema original funcionaba correctamente desde el punto de vista de la gestión de reservas; sin embargo, presentaba una limitación en la práctica, ya que el administrador no tenía visibilidad sobre lo que ocurría dentro de la sala de estudio una vez iniciado el horario reservado.
