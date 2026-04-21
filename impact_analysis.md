@@ -50,7 +50,6 @@ Trazar cambios de prioridad que motiven cambios en decisiones de arquitectura.
 | REF-10 | Los datos de reservas deben mantenerse consistentes en todo momento         | Alta      | - | Sin cambio |
 | REF-11 | Solo los administradores puden tener acceso a las cámaras |-|Alta|Nuevo Requisito|
 | REF-12 | Mantener todos los modulos bajo 200 ms | - | Alta | Nuevo Requisito
-|
 
 
 ## 4. Impacto en entidades del dominio
