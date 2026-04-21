@@ -62,6 +62,15 @@ La descomposición se basa en una arquitectura de sistemas distribuidos, separan
 
 ## 4. Decisiones de Diseño
 
+Decisión: Implementar nuevas funciones al panel de administrador.
+
+Motivación: Debido a que las salas tienen cámaras, los administradores deben tener acceso a estas, y poder tomar decisiones en base a lo que vigilan. 
+
+Alternativas consideradas: no se consideraron más alternativas, se vio esto como la acción  más óptima.
+
+Impacto: Se modificaron tres módulos y se añade uno nuevo.  
+
+
 ### Decisión 1
 - **Decisión:** Implementar dos clientes independientes (Frontend y Panel de Control).
 - **Motivación:** Separa las preocupaciones de seguridad y usabilidad entre estudiantes y administradores (REF-04, REF-07).
