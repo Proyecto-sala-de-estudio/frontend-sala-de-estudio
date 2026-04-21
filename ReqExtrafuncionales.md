@@ -10,7 +10,7 @@ La columna Prioridad refleja la importancia para las decisiones de arquitectura:
 | REF-03 | Seguridad                 | Solo usuarios autenticados pueden reservar, cancelar o modificar reservas   | Alta      |
 | REF-04 | Capacidad de interacción  | La interfaz debe ser simple e intuitiva para estudiantes y administradores  | Alta      |
 | REF-05 | Compatibilidad            | El sistema debe implementarse como aplicación web cliente-servidor          | Media     |
-| REF-06 | Compatibilidad            | Debe funcionar en navegadores modernos                                      | Media     |
+| REF-06 | Coexistencia              | Debe funcionar en diferentes navegadores                                    | Media     |
 | REF-07 | Mantenibilidad            | El sistema debe ser modular y de bajo acoplamiento                          | Alta      |
 | REF-08 | Capacidad de interacción  | La interfaz debe estar disponible en idioma español                         | Baja      |
 | REF-09 | Eficiencia de desempeño   | El sistema debe soportar múltiples usuarios concurrentes                    | Media     |
