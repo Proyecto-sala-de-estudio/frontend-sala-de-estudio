@@ -91,12 +91,11 @@ No, la arquitectura tipo Rest gracias a su flexibilidad permite agregar nuevos m
 ## 7. Impacto en módulos
 | Módulo | Tipo de impacto | Responsabilidad actualizada | Ofrece a otros (actualizado) |
 |---|---|---|---|
-| [Módulo existente] | modificado | [descripción actualizada] | [interfaces actualizadas] |
-| [Módulo nuevo] | nuevo | [responsabilidad] | [qué expone] |
-| [Módulo eliminado] | eliminado | [descripción actualizada responsabilidad] | - |
+| Módulo 2 | modificado | Interfaz dedicada a administradores para la gestión de inventario de salas, configuración de reglas, visualización de métricas, además de la visualización de cámaras y métricas relacionadas a las cámaras. | sin cambios |
+| Módulo 5 | nuevo | sistema de cámaras de monitoreo en tiempo real que entrega imagen.| expone video al backend |
 
-Fundamentación de cambios modulares:
-[Justificar por qué se agregan, modifican o eliminan módulos en función del cambio de requerimientos y/o la repriorización de REF.]
+Fundamentación de cambios modulares: El nuevo módulo debe controlará todas las cámaras de las salas y se conectará con el backend y le dará el video cuando sea solicitado.
+Mantenerlo de forma independiente no le agregara complejidad adicional al backend principal.
 
 ## 8. Nuevas decisiones de diseño
 ### Decisión 1
@@ -106,7 +105,7 @@ Motivación: Debido a que las salas tienen cámaras, los administradores deben t
 
 Alternativas consideradas: no se consideraron más alternativas, se vio esto como la acción  más óptima.
 
-Impacto: Se modificaron tres módulos y se añade uno nuevo. 
+Impacto: Se modificó un módulo y se añade uno nuevo. 
 
 ## 9. Trazabilidad actualizada
 | Historia | REF relacionado | Módulo | Mockup |
