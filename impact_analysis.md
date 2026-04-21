@@ -64,6 +64,12 @@ Admin-Cárama-Salas
 
 ## 5. Impacto en mockups
 [Mockups afectados y descripción de cambios necesarios]
+### 1. Panel Admin - Nuevo botón de cámaras:
+Hay que agregar un botón de cámaras en el panel principal. Al pulsarlo, debe mostrar todas las salas disponibles. Si seleccionas una, se tiene que abrir una pantalla o modal con el video en vivo de esa cámara.
+
+### 2. Detalle de Reserva (Vista Admin):
+En esta vista, justo al lado de la pantalla de la cámara, hay que poner la información técnica de la sala (aforo máximo y qué implementos tiene). Ahí mismo tienen que ir los botones de acción rápida para el administrador: "Registrar Incidencia", "Forzar Liberación" y "Mandar a Mantenimiento".
+
 
 ## 6. Impacto en arquitectura
 
