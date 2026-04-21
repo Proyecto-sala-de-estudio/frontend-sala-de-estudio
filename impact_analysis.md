@@ -54,11 +54,15 @@ Trazar cambios de prioridad que motiven cambios en decisiones de arquitectura.
 
 ## 4. Impacto en entidades del dominio
 Las nuevas entidades que aparecerán serán la entidad CAMARA
+
 Los atributos que llevará esta entidad Cámara serán:
 -Int Id
 -String Estado
+
 Además, se agregará un atributo a Sala, esto se debe a que la entidad Cámara esta relacionada con la entidad Sala.
+
 El atributo que se agregará a Sala será el ID de Cámara, para poder identificar que cámara está en cada sala.
+
 Las relaciones que serán afectadas corresponden a la relación del Admin con Salas, que ahora estará vinculada a:
 Admin-Cárama-Salas
 
