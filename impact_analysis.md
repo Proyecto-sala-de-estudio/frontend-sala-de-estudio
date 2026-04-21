@@ -11,6 +11,16 @@ Criterios de aceptación:
 CA1: [descripción]
 CA2: [descripción]
 
+### US-XX: [nombre]
+Como [actor],
+quiero [acción],
+para [beneficio].
+
+Criterios de aceptación:
+CA1: [descripción]
+CA2: [descripción]
+
+
 ## 3. Impacto en requisitos extrafuncionales
 Indicar si el cambio altera la prioridad de algún REF o introduce nuevos.
 Trazar cambios de prioridad que motiven cambios en decisiones de arquitectura.
