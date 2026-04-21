@@ -2,24 +2,35 @@
 Se requiere agregar un módulo de vigilancia en tiempo real mediante cámaras IP con procesamiento de imagen para detectar ocupación real versus reserva registrada, operando de forma continua.
 
 ## 2. Nuevas historias de usuario
-### US-XX: [nombre]
-Como [actor],
-quiero [acción],
-para [beneficio].
+### US-11: Monitoreo de reserva
+Como administrador,
+quiero monitorear en vivo las cámaras de las salas reservadas,
+para confirmar si los estudiantes se presentaron y liberar el espacio si está vacío.
 
-Criterios de aceptación:
-CA1: [descripción]
-CA2: [descripción]
+​Criterio de aceptación 1: El sistema debe mostrar un indicador de "Transmisión en vivo" en el panel de control del administrador al seleccionar una sala.
 
-### US-XX: [nombre]
-Como [actor],
-quiero [acción],
-para [beneficio].
+​Criterio de aceptación 2: Si la sala está vacía 15 minutos después del inicio de la reserva, el sistema debe habilitar un botón de "Forzar Liberación" que cancele la reserva actual y deje la sala como 'Disponible'.
 
-Criterios de aceptación:
-CA1: [descripción]
-CA2: [descripción]
 
+### US-12: Moniterio de uso
+Como administrador,
+quiero verificar visualmente la cantidad de personas y el uso de la sala,
+para asegurar que se respeta la capacidad máxima y las normativas del recinto.
+
+​Criterio de aceptación 1: La vista de la cámara debe mostrar en pantalla la "Capacidad Máxima Permitida" junto a la "Cantidad Declarada en la Reserva" para facilitar la comparación visual.
+
+​Criterio de aceptación 2: El administrador debe poder enviar una notificación del mal uso de la sala a quien la reservó.
+
+### ​US-13: Monitorear estado de la sala, post uso
+Como administrador,
+quiero revisar el estado físico de la sala inmediatamente después de que finaliza una reserva,
+para identificar posibles daños, desorden o necesidades de mantenimiento antes del siguiente turno.
+
+​Criterio de aceptación 1: El sistema debe sacar una captura automaticamente, de la cámara en el minuto exacto en que finaliza la reserva y guardarla en el historial.
+
+​Criterio de aceptación 2: El administrador debe tener un botón rápido para cambiar el estado de la sala a "En Mantenimiento", bloqueando reservas futuras hasta su revisión física.
+
+criterio de aceptación 3: El administrador podrá sancionar a usuarios, si la sala queda en mal estado luego de su usp.
 
 ## 3. Impacto en requisitos extrafuncionales
 Indicar si el cambio altera la prioridad de algún REF o introduce nuevos.
