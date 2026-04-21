@@ -114,4 +114,5 @@ Impacto: Se modificaron tres módulos y se añade uno nuevo.
 | US-XX | REF-XX | [módulo] | [ref] |
 
 ## 10. Justificación global y trade-offs
-[Por qué la solución propuesta es coherente con el sistema. Qué trade-offs se asumieron, especialmente ante cambios de prioridad en REF. Qué se gana y qué se sacrifica con las decisiones tomadas.]
+El sistema original funcionaba correctamente desde el punto de vista de la gestión de reservas; sin embargo, presentaba una limitación en la práctica, ya que el administrador no tenía visibilidad sobre lo que ocurría dentro de la sala de estudio una vez iniciado el horario reservado.
+La incorporación de cámaras permite abordar esta problemática, proporcionando un mecanismo de supervisión que se justifica según lo establecido en las historias de usuario. Esta mejora tiene como objetivo evitar el uso inadecuado o el desperdicio de las salas, resguardar el cumplimiento de las normas, cuidar el espacio físico y asegurar condiciones adecuadas para el siguiente grupo de usuarios
