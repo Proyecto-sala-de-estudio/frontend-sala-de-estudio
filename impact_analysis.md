@@ -48,8 +48,8 @@ Trazar cambios de prioridad que motiven cambios en decisiones de arquitectura.
 | REF-08 | La interfaz debe estar disponible en idioma español                         | Baja      | - | Sin cambio |
 | REF-09 | El sistema debe soportar múltiples usuarios concurrentes                    | Media     | - | Sin cambio |
 | REF-10 | Los datos de reservas deben mantenerse consistentes en todo momento         | Alta      | - | Sin cambio |
-| REF-11 | Solo los administradores puden tener acceso a las cámaras |-|Alta|Nuevo Requisito|
-| REF-12 | Mantener todos los modulos bajo 200 ms | - | Alta | Nuevo Requisito
+| REF-11 | Solo los administradores puden tener acceso a las cámaras | - | Alta | Nuevo Requisito |
+| REF-12 | Mantener todos los modulos bajo 200 ms | - | Alta | Nuevo Requisito |
 
 
 ## 4. Impacto en entidades del dominio
@@ -80,15 +80,13 @@ En esta vista, justo al lado de la pantalla de la cámara, hay que poner la info
 ## 6. Impacto en arquitectura
 
 ### 6.1 ¿Cambia el estilo arquitectónico?
-[Sí/No]
-Justificación:
-[Si la repriorización de REF obliga a cambiar el estilo, explicar por qué. Si el estilo se mantiene, justificar que sigue siendo válido frente al cambio.]
+No, la arquitectura tipo Rest gracias a su flexibilidad permite agregar nuevos módulos, hardware y solo tendrán que ser editadas las partes afectadas directamente (cómo agregar paneles en pantalla del admin)
 
 ### 6.2 Relación REF (repriorizado) con decisiones de arquitectura
 | REF ID | Prioridad nueva | Decisión de arquitectura que lo aborda |
 |---|---|---|
-| REF-03 | Alta | [cambio o confirmación de decisión existente] |
-| REF-07 | Alta | [nueva decisión derivada del cambio] |
+| REF-11 | Alta | El administrador por medio de su panel tendrá acceso a los cambios, esto será manejado |
+| REF-12 | Alta | El backend, la base de datos y el sistema de cámaras deben mejorar sus tiempos de respuesta. Por medio de mejorar el rendimiento y conectividad entre los modulos |
 
 ## 7. Impacto en módulos
 | Módulo | Tipo de impacto | Responsabilidad actualizada | Ofrece a otros (actualizado) |
