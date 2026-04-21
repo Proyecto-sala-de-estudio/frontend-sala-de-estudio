@@ -18,7 +18,22 @@ Se adopta un estilo REST que desacopla la presentación de la lógica de negocio
 
 ## 2. Diagrama de Arquitectura
 
-![Diagrama de Arquitectura](./imagen/diagrama_arquitectura.png)
+```mermaid
+graph TD
+    subgraph Cliente
+        A[Módulo 1<br /> Frontend Web/Mobile<br/>Interfaz de Usuario]
+        B[Módulo 2<br /> Panel de Control / CMS<br/>Admin Salas]
+    end
+
+    subgraph Backend
+        C[Módulo 3<br /> API REST<br/>Lógica de la App]
+        D[(Módulo 4<br /> Base de Datos<br/>Horas Agendadas)]
+        C -- "CRUD" --> D
+    end
+
+    A -- "HTTP Requests" --> C
+    B -- "HTTP Requests" --> C
+```
 
 ## 3. Descomposición Modular
 
