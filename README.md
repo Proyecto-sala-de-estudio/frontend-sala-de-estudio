@@ -23,7 +23,65 @@ Todas las historias están registradas como GitHub Issues.
 Ver: [ReqExtrafuncionales.md](./ReqExtrafuncionales.md)
 
 ## Entidades del Dominio
-![Diagrama de clases](./imagen/diagrama_clases.png)
+```mermaid
+classDiagram
+
+    class Usuario {
+        +int id
+        +String nombre
+        +String correo
+        +String facultad
+    }
+
+    class Administrador {
+        +int id
+        +String usuario
+        +String contrasena
+    }
+
+    class Sala {
+        +int id
+        +String nombre
+        +String ubicacion
+        +int capacidad
+        +String estado
+    }
+
+    class Equipamiento {
+        +int id
+        +String nombre
+    }
+
+    class Reserva {
+        +int id
+        +Date fecha
+        +Time horaInicio
+        +Time horaFin
+        +String estado
+        +int cantidadPersonas
+    }
+
+    class ReglaSistema {
+        +int id
+        +int maxReservasPorUsuario
+        +int tiempoMaximoReserva
+        +Time horaInicioPermitida
+        +Time horaFinPermitida
+    }
+
+    class EstadisticaUso {
+        +int id
+        +float porcentajeUso
+        +int cantidadReservas
+    }
+
+    Usuario "1" --> "0..*" Reserva : realiza
+    Administrador "1" --> "0..*" Sala : gestiona
+    Administrador "1" --> "0..*" ReglaSistema : configura
+    Reserva "1" --> "1" Sala : reserva
+    Sala "1" --> "0..*" Equipamiento : posee
+    Sala "1" --> "0..1" EstadisticaUso : genera
+```
 
 ## Mockups
 | Mockup | Historia de usuario relacionada |
