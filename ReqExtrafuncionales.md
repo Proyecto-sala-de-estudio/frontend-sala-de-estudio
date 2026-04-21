@@ -3,7 +3,7 @@
 Clasificación según ISO 25010 y tipo de restricción.  
 La columna Prioridad refleja la importancia para las decisiones de arquitectura: Alta, Media o Baja.
 
-| ID     | Tipo (ISO 25010)          | Descripción                                                                 | Prioridad |
+| ID     | Tipo                      | Descripción                                                                 | Prioridad |
 |--------|---------------------------|-----------------------------------------------------------------------------|-----------|
 | REF-01 | Eficiencia de desempeño   | El sistema debe responder en menos de 2 segundos en operaciones comunes     | Alta      |
 | REF-02 | Fiabilidad                | El sistema debe estar disponible al menos un 99% en horario operativo       | Alta      |
