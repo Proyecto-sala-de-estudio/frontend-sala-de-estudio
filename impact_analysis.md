@@ -48,9 +48,9 @@ Trazar cambios de prioridad que motiven cambios en decisiones de arquitectura.
 | REF-08 | La interfaz debe estar disponible en idioma español                         | Baja      | - | Sin cambio |
 | REF-09 | El sistema debe soportar múltiples usuarios concurrentes                    | Media     | - | Sin cambio |
 | REF-10 | Los datos de reservas deben mantenerse consistentes en todo momento         | Alta      | - | Sin cambio |
-| REF-01 | [descripción] | Alta | Alta | Sin cambio |
-| REF-03 | [descripción] | Media | Alta | El cambio lo hace crítico |
-| REF-07 | [nuevo REF derivado del cambio] | - | Alta | Nuevo requisito |
+| REF-11 | Solo los administradores puden tener acceso a las cámaras |-|Alta|Nuevo Requisito|
+| REF-03 |  | Media | Alta | El cambio lo hace crítico |
+| REF-07 | [nuevo REF derivado del cambio] | - | Alta | Nuevo requisito 
 
 ## 4. Impacto en entidades del dominio
 [Nuevas entidades, atributos o relaciones afectadas]
