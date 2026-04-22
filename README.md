@@ -95,5 +95,5 @@ Ver: [Arquitectura.md](./Arquitectura.md)
 | ---------- | ------------- | ----------------------------------- |
 | Vicente    | Scrum Master  | [1.1 Historias de Usuario - 2.3 Mockups]                         |
 | Matías     | Product Owner | [1.2 Requisitos Extrafuncionales - apoyo general en coherencia]  |
-| Nacho      | Developer     | [2.1 Diseño Arquitectónico - 2.2 Diagrama de Arquitectura]       |
+| José      | Developer     | [2.1 Diseño Arquitectónico - 2.2 Diagrama de Arquitectura]       |
 | Martín     | Developer     | [2.4 Entidades del dominio]                                      |
